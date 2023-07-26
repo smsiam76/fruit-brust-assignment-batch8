@@ -44,45 +44,39 @@
 	<!-- header -->
 	<header class="container mx-auto">
 		<!-- navbar -->
-		<div class="navbar bg-base-100">
-			<div class="navbar-start">
+		<nav class="navbar justify-between  bg-white lg:bg-fruit-bg py-3 px-4 my-4 lg:my-8 rounded-full">
+			<div class="navbar-start hidden lg:block">
+				<ul class="menu menu-horizontal px-1">
+			      	<li><a>Home</a></li>
+			        <li><a>About Us</a></li>
+			        <li><a>Shop</a></li>
+			        <li><a>All Fruits</a></li>
+			    </ul>
+			</div>
+			<div class="navbar-center">
+			    <div class="flex gap-4 items-center">
+			    	<img class="w-12" src="./images/logo.png" alt="">
+			    	<a href="#" class="text-xl lg:text-4xl text-fruit-title lg:text-white">Fruit Burst</a>
+			    </div>
+			</div>
+			  <div class="navbar-end">
+			    <div class="relative hidden lg:block">
+			    	<input class="input w-full rounded-full px-8" type="search" name="" id="search" placeholder="Search here">
+			    	<button href="" class="btn bg-transparent rounded-full absolute top-0 right-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+			    </div>
 			    <div class="dropdown">
 			      <label tabindex="0" class="btn btn-ghost lg:hidden">
 			        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			      </label>
-			      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-			        <li><a>Item 1</a></li>
-			        <li>
-			          <a>Parent</a>
-			          <ul class="p-2">
-			            <li><a>Submenu 1</a></li>
-			            <li><a>Submenu 2</a></li>
-			          </ul>
-			        </li>
-			        <li><a>Item 3</a></li>
+			      <ul tabindex="0" class="menu menu-sm dropdown-content top-10 lg:top-20 right-0 mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
+			        <li><a>Home</a></li>
+			        <li><a>About Us</a></li>
+			        <li><a>Shop</a></li>
+			        <li><a>All Fruits</a></li>
 			      </ul>
 			    </div>
-			    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-			</div>
-			<div class="navbar-center hidden lg:flex">
-			    <ul class="menu menu-horizontal px-1">
-			      <li><a>Item 1</a></li>
-			      <li tabindex="0">
-			        <details>
-			          <summary>Parent</summary>
-			          <ul class="p-2">
-			            <li><a>Submenu 1</a></li>
-			            <li><a>Submenu 2</a></li>
-			          </ul>
-			        </details>
-			      </li>
-			      <li><a>Item 3</a></li>
-			    </ul>
-			</div>
-			  <div class="navbar-end">
-			    <a class="btn">Button</a>
 			  </div>
-		</div>
+		</nav>
 		<!-- navbar ends -->
 
 		<!-- banner -->
@@ -92,7 +86,7 @@
 		  <div id="slide1" class="carousel-item relative w-full bg-center bg-cover" style="background-image: url(./images/banner1.png);">
 		  	<div class="w-full backdrop-brightness-50">
 		  		<!-- banner content -->
-			    <div class="max-w-2xl mx-auto p-8 md:p-0 md:mt-16 text-center text-white">
+			    <div class="max-w-2xl mx-auto p-8 lg:p-0 md:mt-16 text-center text-white">
 			    	<h1 class="text-2xl md:text-7xl font-black md:mb-6">Exotic tastes at your <br>doorstep</h1>
 			    	<p class="text-sm md:text-base mb-4 md:mb-7">We supply highly quality organic products</p>
 			    	<button class="btn bg-fruit-bg text-white border-none font-bold capitalize py-5 px-7 h-auto">Shop Now</button>
@@ -136,7 +130,7 @@
 
 		    <div class="w-full backdrop-brightness-50">
 		    	<!-- banner content -->
-			    <div class="max-w-2xl mx-auto p-8 md:p-0 md:mt-16 text-center text-white">
+			    <div class="max-w-2xl mx-auto p-8 lg:p-0 md:mt-16 text-center text-white">
 			    	<h1 class="text-2xl md:text-7xl font-black md:mb-6">Exotic tastes at your <br>doorstep</h1>
 			    	<p class="text-sm md:text-base mb-4 md:mb-7">We supply highly quality organic products</p>
 			    	<button class="btn bg-fruit-bg text-white border-none font-bold capitalize py-5 px-7 h-auto">Shop Now</button>
@@ -180,7 +174,7 @@
 		  <div id="slide3" class="carousel-item relative w-full bg-center bg-cover" style="background-image: url(./images/banner3.png);">
 			  <div class="w-full backdrop-brightness-50">
 			    <!-- banner content -->
-			    <div class="max-w-2xl mx-auto p-8 md:p-0 md:mt-16 text-center text-white">
+			    <div class="max-w-2xl mx-auto p-8 lg:p-0 md:mt-16 text-center text-white">
 			    	<h1 class="text-2xl md:text-7xl font-black md:mb-6">Exotic tastes at your <br>doorstep</h1>
 			    	<p class="text-sm md:text-base mb-4 md:mb-7">We supply highly quality organic products</p>
 			    	<button class="btn bg-fruit-bg text-white border-none font-bold capitalize py-5 px-7 h-auto">Shop Now</button>
@@ -224,7 +218,7 @@
 
 		    <div class="w-full backdrop-brightness-50">
 		    	<!-- banner content -->
-			    <div class="max-w-2xl mx-auto p-8 md:p-0 md:mt-16 text-center text-white">
+			    <div class="max-w-2xl mx-auto p-8 lg:p-0 md:mt-16 text-center text-white">
 			    	<h1 class="text-2xl md:text-7xl font-black md:mb-6">Exotic tastes at your <br>doorstep</h1>
 			    	<p class="text-sm md:text-base mb-4 md:mb-7">We supply highly quality organic products</p>
 			    	<button class="btn bg-fruit-bg text-white border-none font-bold capitalize py-5 px-7 h-auto">Shop Now</button>
